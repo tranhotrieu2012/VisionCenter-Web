@@ -1,0 +1,26 @@
+ <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => {
+                const file = e.target.files[0];
+                if (file) {
+                  const reader = new FileReader();
+                  reader.onload = () => {
+                    setNewProduct({ ...newProduct, avatar: reader.result });
+                  };
+                  reader.readAsDataURL(file); // chuyển sang base64
+                }
+              }}
+              className="manager-product-input"
+            />
+            {newProduct.avatar && (
+              <img
+                src={newProduct.avatar}
+                alt="Preview"
+                style={{
+                  maxWidth: "100%",
+                  marginTop: "8px",
+                  borderRadius: "8px",
+                }}
+              />
+            )}

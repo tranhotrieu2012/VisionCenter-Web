@@ -1,0 +1,79 @@
+.category-container {
+   background: #fff;
+   padding: 2rem;
+   min-height: 100vh;
+   font-family: 'Segoe UI', sans-serif;
+   color: #003d73;
+ }
+ 
+ .category-title {
+   text-align: center;
+   font-size: 2.5rem;
+   font-weight: 700;
+   background: linear-gradient(to right, #0066b3, #003d73);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-bottom: 3rem;
+   position: relative;
+ }
+ 
+ .category-list {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 2rem;
+ }
+ 
+ .category-card {
+   width: 260px;
+   padding: 2rem;
+   border-radius: 1rem;
+   background: #fff;
+   box-shadow: 0 8px 20px rgba(0, 102, 179, 0.1);
+   border: 2px solid transparent;
+   transition: all 0.3s ease;
+   text-align: center;
+   cursor: pointer;
+   text-decoration: none;
+   color: inherit;
+ }
+ 
+ .category-card:hover {
+   border: 2px solid #0066b3;
+   transform: translateY(-5px);
+   box-shadow: 0 12px 25px rgba(0, 102, 179, 0.2);
+ }
+ 
+ .category-icon {
+   font-size: 3rem;
+   margin-bottom: 1rem;
+   color: #0066b3;
+ }
+ 
+ .category-name {
+   font-size: 1.2rem;
+   font-weight: bold;
+ }
+ 
+ .featured-products-section {
+   margin-top: 4rem;
+ }
+ 
+ .section-heading,
+ .category-label {
+   text-align: center;
+   font-size: 1.8rem;
+   font-weight: 600;
+   background: linear-gradient(to right, #0066b3, #003d73);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin: 2rem 0 1rem;
+ }
+ 
+ .featured-products-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1.5rem;
+ }
+ 

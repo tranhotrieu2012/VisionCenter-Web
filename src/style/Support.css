@@ -1,0 +1,233 @@
+.support-page {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0;
+  margin: 0;
+  color: #2a2a2a;
+  background-color: #f7f9fc;
+  line-height: 1.6;
+  margin-top: 67px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.support-hero-section {
+   background: linear-gradient(to right, #0066b3, #003d73);
+   min-height: 50vh;
+   position: relative;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 4rem 2rem;
+   color: white;
+   text-align: center;
+   overflow: hidden;
+ }
+ 
+ .glitch {
+   position: relative;
+   animation: glitch 2s infinite;
+   color: #fff;
+   font-size: 2.5rem;
+ }
+ 
+ @keyframes glitch {
+   0% { text-shadow: 2px 0 red, -2px 0 cyan; }
+   20% { text-shadow: -2px 0 red, 2px 0 cyan; }
+   40% { text-shadow: 2px 0 cyan, -2px 0 red; }
+   60% { text-shadow: -2px 0 cyan, 2px 0 red; }
+   80% { text-shadow: 2px 0 red, -2px 0 cyan; }
+   100% { text-shadow: 0 0 transparent; }
+ }
+ 
+ .neon-grid::before {
+   content: "";
+   position: absolute;
+   width: 200%;
+   height: 200%;
+   background-image: 
+     linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px), 
+     linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px);
+   background-size: 40px 40px;
+   transform: rotateX(60deg) translateY(-50%);
+   top: 50%;
+   left: -50%;
+   animation: moveGrid 30s linear infinite;
+   z-index: 0;
+ }
+ 
+ @keyframes moveGrid {
+   from { transform: rotateX(60deg) translateY(-50%) translateX(0); }
+   to { transform: rotateX(60deg) translateY(-50%) translateX(-50%); }
+ }
+ 
+ .particles {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background: url('https://www.transparenttextures.com/patterns/stardust.png');
+   animation: shimmer 15s linear infinite;
+   opacity: 0.1;
+   z-index: 1;
+ }
+ @keyframes shimmer {
+   0% { background-position: 0 0; }
+   100% { background-position: 1000px 1000px; }
+ }
+ 
+
+
+
+
+/* Contact Options */
+.contact-options {
+  padding: 50px 20px;
+  background-color: #fff;
+}
+.contact-options h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+.contact-card {
+  background: #f0f4f9;
+  padding: 30px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+.contact-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.contact-card h3 {
+  margin-bottom: 10px;
+}
+.contact-card p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+.contact-card button {
+  padding: 10px 20px;
+  background-color: #0066b3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.contact-card button:hover {
+  background-color: #004d8a;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 50px 20px;
+}
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-item {
+  background: #ffffff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-left: 5px solid #0066b3;
+  border-radius: 6px;
+}
+.faq-item h4 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #003d73;
+}
+
+/* Downloads Section */
+.downloads-section {
+  background-color: #f0f4f9;
+  padding: 50px 20px;
+}
+.downloads-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+.download-list {
+  max-width: 700px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+.download-list li {
+  background: #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+.download-list li:hover {
+  background: #e6effa;
+}
+.download-list a {
+  text-decoration: none;
+  color: #0066b3;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+/* Feedback Section */
+.feedback-section {
+  padding: 50px 20px;
+  background-color: white;
+}
+.feedback-section h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.feedback-section p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.feedback-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+.feedback-form textarea {
+  width: 100%;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+.feedback-form button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background-color: #0066b3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.feedback-form button:hover {
+  background-color: #004d8a;
+}
+
+
